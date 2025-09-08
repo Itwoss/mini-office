@@ -1,0 +1,20 @@
+{
+  "name": "mini-office",
+  "version": "1.0.0",
+  "description": "A full-stack mini-office application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": ["react", "node", "express", "mongodb", "socket.io"],
+  "author": "Mini Office Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
